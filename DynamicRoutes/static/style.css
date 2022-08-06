@@ -1,0 +1,12 @@
+.item-container{
+    display: flex;
+}
+
+.item{
+    width: 30%;
+    margin: auto;
+}
+
+.item img{
+    width: 100%;
+}

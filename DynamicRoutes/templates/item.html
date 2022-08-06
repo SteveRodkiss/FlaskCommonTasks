@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Display a single item -->
+<div class="item">
+    <h1>{{ item[1] }}</h1>
+    <img src="{{url_for('static',filename='images/'+item[2])}}" alt="{{item[2]}}">
+    <p>{{item[3]}}</p>
+</div>
+{% endblock %}
