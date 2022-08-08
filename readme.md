@@ -21,4 +21,4 @@ Basic variable rules to send data to a route. Used commonly to allow queries to 
 9. SessionStorage  
 A great way to store info across the session like the user who is logged in. Stored in cookies and available to the whole app, even in the templates!
 10. SimpleUserLogin  
-A bit more in depth- several simple routes to log in, sign up, log out. Uses a database of users and HASHES the passwword before storing it. Quick and Dirty and OK for a start.
+A bit more in depth- several simple routes to log in, sign up, log out. Uses a database of users and HASHES the passwword before storing it. Quick and Dirty and OK for a start. Like before, storees the user in the session so we can, for example, only render admin pages to a certain user(s) or add items to the correct users shopping cart.
