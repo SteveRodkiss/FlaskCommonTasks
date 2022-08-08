@@ -15,7 +15,7 @@ def query_db(sql,args=(),one=False):
     results = cursor.fetchall()
     db.commit()
     db.close()
-    return results[0] if one else results
+    return (results[0] if results else None) if one else results
 
 
 #routes go here
