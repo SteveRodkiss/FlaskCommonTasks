@@ -23,7 +23,8 @@
         {% endfor %}
     </table>
 
-    <!-- Now make a form to input a new item -->
+    <!-- Now make a form to input a new item. It uses the route "add_item" in the app.py file
+     Don't forget to add the form "action" when you use it yourself-->
     <form action="/add_item" method="post">
         <label for="item_name">Item Name</label>
         <input type="text" name="item_name">

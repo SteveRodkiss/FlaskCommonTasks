@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 import sqlite3
 
-from sqlalchemy import true   #for the database stuff
 
 app = Flask(__name__)
 

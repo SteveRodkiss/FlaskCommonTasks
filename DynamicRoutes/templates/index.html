@@ -3,8 +3,8 @@
 <!-- Now i can fill out the blocks that I want -->
 {% block content %}
 <h1>All my items</h1>
+<div class="threecolumn">
 {% for item in results %}
-<div class="item-container">
     <div class="item">
         <h1>{{ item[1] }}</h1>
         <!-- img is an anchor tag with href to the dynamic route using the id of the item -->
@@ -12,6 +12,6 @@
             <img src="{{url_for('static',filename='images/'+item[2])}}" alt="{{item[2]}}">
         </a>
     </div>
-</div>
 {% endfor %}
+</div>
 {% endblock %}
